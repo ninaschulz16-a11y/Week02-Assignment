@@ -5,42 +5,39 @@ const Container = document.getElementById('displayContainer')
 
 const images = [
     {
-        src:"https://images.unsplash.com/photo-1616712602593-9d386fa95b84?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt:"tree tops under big cloud during sunset"
+        src:'./images/norwichriverclouds.jpg',
+        alt:'Norwich river with clouds reflection'
     },
     {
-        src:'',
-        alt:''
+        src:'./image/norwichriverupsidedown.jpg',
+        alt:'tree and building reflection'
     },
     {
-        src:'',
-        alt:''
+        src:'./images/norwichsunsetsky.jpg',
+        alt:'orange sky'
     },
     {
-        src:'',
-        alt:''
-    },
-    {
-        src:'',
-        alt:''
-    },
-    {
-        src:'',
-        alt:''
+        src:'./image/chromerpebbles.jpg',
+        alt:'pebbles on the beach'
     }
 ]
 
-function createSamplesimages (){
 
-    images.forEach(function(image)) {
+function createSamplesImages (){
 
-        let imageElement = document.createElement('img')
-        console.log(`current image is`, image)
-        imageElement.src = image.src
+    images.forEach(function(image) {
+
+        let imageElement = document.createElement('img');
+
+    imageElement.src = image.src
+        console.log(`current image is`, image);
+        
 
         imageElement.addEventListener('click', function(){
             console.log(image)
             createBigImage(image)
         })
-    }
-}
+    
+    })
+ }
+
