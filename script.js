@@ -9,7 +9,7 @@ let currentIndex = 0;
 
 const images = [
     {
-        src:'./images/norwichriverclouds.jpg',
+        src:'./images/irelandfloatingisland.jpg',
         alt:'Norwich river with clouds reflection'
     },
     {
@@ -17,11 +17,11 @@ const images = [
         alt:'tree and building reflection'
     },
     {
-        src:'./images/norwichsunsetsky.jpg',
+        src:'./images/lisbonsunset.jpg',
         alt:'orange sky'
     },
     {
-        src:'./images/chromerpebbles.jpg',
+        src:'./images/bluesky.jpg',
         alt:'pebbles on the beach'
     }
 ];
@@ -66,3 +66,4 @@ function createThumbnails (){
 
  createThumbnails();
  displayBigImage(images[currentIndex]);
+
