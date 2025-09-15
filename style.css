@@ -12,7 +12,7 @@ html,body{
     position:fixed;
     top:0;
     left:0;
-    width: 100vw;
+    width: 100%;
     height: 100dvh;    
     display: flex;
     justify-content: center;
@@ -24,8 +24,10 @@ html,body{
 }
 
 .displayContainer img.large-image {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
     transition: all 0.5s ease;
 
@@ -38,7 +40,6 @@ html,body{
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
-    width:auto;
     background: rgba(0,0,0,0.35);
     z-index: 2000;
     justify-content: center;
@@ -47,6 +48,7 @@ html,body{
     overflow-x: auto;
     max-width: 95%;
     border-radius: 10px;
+    gap:8px;
 }
 
 .thumbnails img.thumbnail {
@@ -60,8 +62,8 @@ html,body{
 
 .thumbnails img.thumbnail:hover {
     transform: scale(1.1);
-}
 
+}
 .left, .right {
     position: fixed;
     top: 50%;
@@ -78,18 +80,19 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: backgorund 0.2s;
+    transition: background 0.2s;
 }
 .left {
     left:10px;
 }
 .right {
-    right: 15px;px;
+    right: 15px;
 }
+
 
 @media (min-width:1024px) {
     .thumbnails img.thumbnail {
-        width: 10dvw;
+        width: 80px;
     }
 
     .left, .right {
@@ -98,4 +101,9 @@ html,body{
         font-size: 2.5rem;
     
     }
+    .displayContainer img.large-image {
+        width: 100%;
+        height: 100%;
+            object-fit: cover;
+        }
 }
