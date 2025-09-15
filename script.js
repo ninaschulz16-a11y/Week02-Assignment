@@ -10,7 +10,7 @@ let currentIndex = 0;
 const images = [
     {
         src:'./images/irelandfloatingisland.jpg',
-        alt:'Norwich river with clouds reflection'
+        alt:'islands in the distance and horses on field'
     },
     {
         src:'./images/norwichriverupsidedown.jpg',
@@ -18,12 +18,10 @@ const images = [
     },
     {
         src:'./images/lisbonsunset.jpg',
-        alt:'orange sky'
-    },
-    {
-        src:'./images/bluesky.jpg',
-        alt:'pebbles on the beach'
+        alt:'orange sky Tejo river'
     }
+
+    
 ];
 
 
